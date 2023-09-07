@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <title>Reservas de cabañas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>    
+    <header id="titulo"></header>
+    <button id="logoutt" type="button">Cerrar sesion</button>
+    <h2>
+    </h2>
+    <p>Ingrese dia de Entrada
+        <input type="date" id="diaInp1" min="2023-09-01" max="2024-04-01">
+    </p>
+    <p>Ingrese dia de Salida
+            <input type="date" id="diaInp2" min="2023-09-01" max="2024-04-01">
+    </p>
+    <button onclick="calcular()">Ver costo total</button>
+    <p>Para ver precios durante el año<a href="preciosMeses.html"> Aca </a></p>
+    <div id="error"></div>
+    <div id="result"></div> 
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
