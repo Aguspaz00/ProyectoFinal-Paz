@@ -26,6 +26,7 @@ p{
 input{
     background-color: #ffda23;
     color: rgb(0, 0, 0);
+    display: flex;
     
 }
 h3{

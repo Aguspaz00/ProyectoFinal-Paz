@@ -18,10 +18,14 @@
     <p>Ingrese dia de Salida
             <input type="date" id="diaInp2" min="2023-09-01" max="2024-04-01">
     </p>
-    <button onclick="calcular()">Ver costo total</button>
-    <p>Para ver precios durante el año<a href="preciosMeses.html"> Aca </a></p>
+    <div>
+        <button onclick="calcular()">Ver costo total</button>
+        <p>Para ver precios durante el año<a href="preciosMeses.html"> Aca </a></p>
+    </div>
     <div id="error"></div>
     <div id="result"></div> 
+    <button onclick="confimar()" id="confirmar">Confirmar estadia</button> 
+    <div id="confirmados"></div>
 
     <canvas id="myChart" width="400" height="400"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
